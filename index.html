@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Paintball Belgrade</title>
+</head>
+<body>
+
+    <div id="loader"></div>
+    <!--NAVIGATION-->
+    <nav class="nav">
+        <div class="nav__toggle d-md-none d-flex justify-content-center align-items-center">
+            <div class="nav__burger">
+            </div>
+        </div>
+        <a href="#"><div class="nav__logo"></div></a>
+        <div class="nav__navbar container">
+            <ul class="nav__items d-block d-md-flex align-items-center justify-content-between">
+                <li class="nav__item mt-4 mt-md-0 mr-md-2 d-flex justify-content-end"><a class="nav__link nav__link--yellow" href="#home">home</a></li>
+                <li class="nav__item mr-md-5 mt-4 mt-md-0 ml-md-3 d-flex justify-content-end"><a class="nav__link nav__link--blue" href="#about">about</a></li>
+                <li class="nav__item ml-md-5 mt-4 mt-md-0 d-flex justify-content-end"><a class="nav__link nav__link--green" href="#gallery">gallery</a></li>
+                <li class="nav__item my-4 my-md-0 d-flex justify-content-end"><a class="nav__link nav__link--red" href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!--SECTIONS-->
+    <!--HOME-->
+    <section id="home" class="home container-fluid">
+        <div class="d-flex">
+            <div class="home__text column col-7 col-md-6 col-lg-5 pl-4">
+                <h1 class="home__heading">
+                    ADAPT<br>
+                    OVERCOME<br>
+                    SURVIVE
+                </h1>
+                <h4 class="home__subheading">
+                    This is the right place for your squad, enjoy the best <span><b>paintball</b></span> experience in the city of Belgrade!
+                </h4>
+            </div>
+            <img src="img/head.png" alt="helmet paintball" class="home__img">
+            <i class="home__arrow fas fa-angle-down text-center"></i>
+        </div> 
+    </section>
+    <!--ABOUT-->
+    <section id="about" class="about py-5">
+        <div class="container">
+                <h1 class="about__heading display-4 mt-5 mb-4 text-center">who we are</h1>
+                <div class="row justify-content-center">
+                    <p class="about__text col-12 col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, magnam delectus est ex reiciendis blanditiis veniam consectetur asperiores labore molestiae. Nostrum soluta nesciunt reprehenderit reiciendis quasi illum atque! Id facere ipsam est ratione mollitia fugit necessitatibus reiciendis ut nostrum veritatis, consequuntur corrupti quibusdam, recusandae modi repellat velit similique delectus assumenda.</p>
+                </div>
+                <h1 class="about__heading display-4 mt-5 mb-4 text-center">rules</h1>
+                <div class="row justify-content-center">
+                    <p class="about__text col-12 col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt assumenda unde voluptates. Vel architecto aspernatur officia nostrum atque impedit repellendus itaque officiis quam, ab molestiae, alias excepturi culpa dignissimos nemo quia voluptatum praesentium ex sit amet consectetur repudiandae?<br> Repudiandae vel consequatur nemo praesentium non cumque veniam tenetur aperiam eius dolores? Sint dignissimos odit expedita alias veniam repellendus at quisquam minima earum eius a obcaecati ea optio, laudantium distinctio consequuntur porro neque excepturi libero nobis dicta dolor? Tenetur eligendi eius cum culpa impedit.<br> Repudiandae vel consequatur nemo praesentium non cumque veniam tenetur aperiam eius dolores? Sint dignissimos odit expedita alias veniam repellendus at quisquam minima earum eius a obcaecati ea optio, laudantium distinctio consequuntur porro neque excepturi libero nobis dicta dolor? Tenetur eligendi eius cum culpa impedit. Repudiandae vel consequatur nemo praesentium non cumque veniam tenetur aperiam eius dolores. Repudiandae vel consequatur nemo praesentium non cumque veniam tenetur aperiam eius dolores. Pepellendus itaque officiis quam, ab molestiae, alias excepturi culpa dignissimos nemo quia voluptatum praesentium ex Tenetur eligendi eius cum repudiandae.</p>
+                </div>
+                <h1 class="about__heading display-4 mt-5 mb-4 text-center">it's all about fair play</h1>
+                <div class="row justify-content-center">
+                    <p class="about__text col-12 col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt assumenda unde voluptates. Vel architecto aspernatur officia nostrum atque impedit repellendus itaque officiis quam, ab molestiae, alias excepturi culpa dignissimos nemo quia voluptatum praesentium ex nostrum officia repudiandae?<br> Repudiandae vel consequatur nemo praesentium non cumque veniam tenetur aperiam eius dolores? Sint dignissimos odit expedita alias veniam repellendus at quisquam minima earum eius a obcaecati ea optio, laudantium distinctio consequuntur porro neque excepturi libero nobis dicta dolor? Tenetur eligendi eius cum culpa impedit.</p>
+                </div> 
+        </div>
+    </section>
+    <!--GALLERY-->
+    <section id="gallery" class="gallery py-5">
+        <div class="container">
+            <h1 class="gallery__heading display-4 mt-5 mb-4 text-center">some pics from our battlefield</h1>
+        </div>
+        <div class="container mb-4">
+            <div class="row justify-content-center align-items-center">
+                <a href="img/gallery-1.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-1-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-2.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-2-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-3.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-3-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-4.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-4-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-5.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-5-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-6.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-6-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-7.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-7-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-8.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-8-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-9.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-9-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-10.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-10-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-11.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-11-small.jpg" alt="gallery paintball"></a>
+                <a href="img/gallery-12.jpg" data-lightbox="mygallery" class="p-2 col-md-5 col-lg-3"><img class="gallery__img" src="img/gallery-12-small.jpg" alt="gallery paintball"></a>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT-->
+    <section id="contact" class="contact py-5">
+        <div class="container mt-5">
+            <h1 class="about__heading display-4 mt-5 mb-4 text-center">feel free to contact us</h1>
+            <div class="row justify-content-md-center">
+
+                <!--MAP START-->
+                <div id="map" class="contact__map p-0 col-12 col-md-8">
+                </div>
+                <script>
+                    var map = L.map('map').setView([44.76, 20.43], 13);
+                    var marker = L.marker([44.76, 20.43]).addTo(map);
+                      marker.bindPopup('Paintball Belgrade')
+                      marker.openPopup();
+                    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=wPbkGgkVhYc3e7IzLyBV',{
+                      tileSize: 512,
+                      zoomOffset: -1,
+                      minZoom: 1,
+                      attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+                      crossOrigin: true
+                    }).addTo(map);
+                  </script>
+                  <!--MAP END-->
+
+                <div class="contact__info p-0 mt-4 mt-md-0 ml-4 col-12 col-md-3">
+                    <p>Adress:<br> Kosutnjak, Belgrade</p>
+                    <p>Phone:<br> +381-64-xxx/xxxx</p>
+                    <p>Email:<br> paintball@gmail.com</p>
+                    <p>Socials:</p>
+                    <div class="contact__socials contact__socials--ig">
+                    </div>
+                    <div class="contact__socials contact__socials--fb">
+                    </div>
+                    <div class="contact__socials contact__socials--yt">
+                    </div>
+                </div>
+            </div>
+            <p class="col-12 col-md-7 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic delectus nam facilis libero voluptates cupiditate sapiente, similique blanditiis voluptatibus neque sunt mollitia deleniti ratione praesentium sequi nulla suscipit reiciendis nostrum officia repellat cum quas enim? Id, culpa ex quidem fugiat at magni, consequatur repellat reiciendis omnis debitis necessitatibus facilis.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="footer__text mt-5">&copy; 2021. All rights reserved | Milutin Bogosavljević</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

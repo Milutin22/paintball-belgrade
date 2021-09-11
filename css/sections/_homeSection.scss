@@ -1,0 +1,42 @@
+.home {
+    overflow: hidden;
+    height: 100vh;
+    background-color: $primaryColorOne;
+    &__text {
+        transform: translate(0, 24%);
+        display: relative;
+        z-index: 2;
+    }
+    &__heading {
+        font-size: 8rem;
+        font-weight: 900;
+        line-height: 1.1;
+    }
+    &__subheading {
+        display: inline-block;
+        width: 130%;
+       span {
+        color: $secondaryColorOne;
+        line-height: 1.5;
+        }
+    }
+    &__img {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        transform: translate(11%, 10%)
+    }
+    &__arrow {
+        transform: translate(-50%, 0);
+        font-size: 2.5rem;
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        animation: upAndDown 0.5s alternate infinite;
+    }
+}
+// ANIMATION - ARROW UP AND DOWN ON THE HOME SECTION
+@keyframes upAndDown {
+    0% {transform: translate(-50%, 0);}
+    100% {transform: translate(-50%, 10px);}
+}

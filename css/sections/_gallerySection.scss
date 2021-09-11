@@ -1,0 +1,20 @@
+.gallery {
+    background-color: $primaryColorOne;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-top: 1px solid $secondaryColorTwo;
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    &__img {
+        transition: 0.4s;
+        width: 100%;
+        &:hover {
+            transform: scale(1.04);
+            filter: sepia(0.6);
+        }
+    }
+}

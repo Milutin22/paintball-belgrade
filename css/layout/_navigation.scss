@@ -1,0 +1,138 @@
+.nav {
+    background-color: $primaryColorTwo;
+    height: 13vh;
+    width: 100%;
+    position: fixed;
+    z-index: 888;
+    &__toggle {
+        width: 35px;
+        height: 22px;
+        position: relative;
+        top: 4vh;
+        left: 6vw;
+        cursor: pointer;
+    }
+    &__burger {
+        width: 80%;
+        height: 4px;
+        background-color: $secondaryColorTwo;
+        transition: all 1s;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 4px;
+            background-color: $secondaryColorTwo;
+            transition: all 1s;
+        }
+        &::before {
+            transform: translate(0, -8px);
+        }
+        &::after {
+            transform: translate(0, 8px);
+        }
+    }
+    &__logo {
+        position: absolute;
+        width: 150px;
+        height: 113px;
+        background-image: url(../img/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, 0);
+    }
+    &__items {
+        height: 100%;
+    }
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        color: $secondaryColorTwo;
+        font-size: 1.5rem;
+        position: relative;
+        font-weight: 600;
+        &--yellow:hover {
+            color: $secondaryColorTwo;
+            text-decoration: none;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -6px;
+                height: 60%;
+                border-bottom: 4px double $secondaryColorOne;
+                animation: through 0.2s ease-out forwards;
+            }
+        }
+        &--blue:hover {
+            color: $secondaryColorTwo;
+            text-decoration: none;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -6px;
+                height: 60%;
+                border-bottom: 4px double $secondaryColorThree;
+                animation: through 0.2s ease-out forwards;
+            }
+        }
+        &--green:hover {
+            color: $secondaryColorTwo;
+            text-decoration: none;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -6px;
+                height: 60%;
+                border-bottom: 4px double $secondaryColorFour;
+                animation: through 0.2s ease-out forwards;
+            }
+        }
+        &--red:hover {
+            color: $secondaryColorTwo;
+            text-decoration: none;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -6px;
+                height: 60%;
+                border-bottom: 4px double $secondaryColorFive;
+                animation: through 0.2s ease-out forwards;
+            }
+        }
+    }
+}
+// ANIMATION - LINE THROUGH NAV LINKS ON HOVER 
+@keyframes through {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 120%;
+    }
+}
+
+// ANIMATION FOR ADDING IN JS - BURGER MENU
+.burgerToggle {
+    animation: colorChange 0.5s;
+    &::before {
+        animation: colorChange 1s;
+    }
+    &::after {
+        animation: colorChange 0.7s;
+    }
+}
+
+@keyframes colorChange {
+    0% {background-color: $secondaryColorTwo;}
+    25% {background-color: $secondaryColorOne;}
+    50% {background-color: $secondaryColorFour;}
+    75% {background-color: $secondaryColorFive;}
+    100% {background-color: $secondaryColorTwo;}
+}

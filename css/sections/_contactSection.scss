@@ -1,0 +1,31 @@
+.contact {
+    height: 100vh;
+    background-color: $primaryColorOne;
+    background-image: url(../img/background_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid $secondaryColorTwo;
+    border-bottom: 1px solid $secondaryColorTwo;
+    &__map {
+        height: 300px!important;
+    }
+    &__socials {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    &__socials--ig {
+        background-image: url(../img/ig.svg);
+        background-size: cover;
+    }
+    &__socials--fb {
+        background-image: url(../img/fb.svg);
+        background-size: cover;
+    }
+    &__socials--yt {
+        background-image: url(../img/yt.svg);
+        background-size: cover;
+    }
+}
